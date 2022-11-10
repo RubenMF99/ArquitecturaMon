@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {useNavigate} from "react-router-dom"
+import {useNavigate,Link} from "react-router-dom"
 import Swal from "sweetalert2/dist/sweetalert2.all.js";
 import axios from 'axios';
 import useAuth from "../../hooks/useAuth";
@@ -116,9 +116,8 @@ const Login = () => {
                 >
                   Iniciar Sesion
                 </button>
-                <input type="radio" className=" mt-5 m-lg-3" />
-                <label className="text-color ">Mantener sesion iniciada</label>
-              </div>
+                <Link to={'/register'} className="link_ mt-5">No estas registrado? Registrate</Link>
+              </div>             
             </div>
           </form>
         </div>

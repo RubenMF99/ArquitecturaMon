@@ -4,7 +4,7 @@ import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Login from './components/Sesion/Login';
 import Monitor from './components/Monitor/Monitor';
 import {AuthProvider} from './context/Auth';
-import RouteProtected from './layouts/RouteProtected';
+import Register from './components/Sesion/Register';
 function App() {
   return (
     <BrowserRouter>
@@ -12,6 +12,8 @@ function App() {
             <Routes>
                 <Route path="/" element={<Login/>}></Route>
                 <Route path="/dashboard" element={<Monitor/>}></Route>
+                <Route path='/register' element={<Register/>}></Route>
+
             </Routes>
         </AuthProvider>
    </BrowserRouter>

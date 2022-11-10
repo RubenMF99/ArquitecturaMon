@@ -50,6 +50,7 @@ const Sidebar = () => {
                 </span>
                 Historial
               </button>
+              
               </>
           :null}
       

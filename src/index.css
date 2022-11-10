@@ -46,6 +46,10 @@ body{
     border: none;
 }
 
+.link_{
+    text-decoration: none !important;
+}
+
 
 .excusa {
     background-color: #004A87;
